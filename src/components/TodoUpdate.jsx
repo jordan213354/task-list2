@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import { FaEdit } from 'react-icons/fa';
 import { useForm } from '../hooks/useForm';
 
+
 export const TodoUpdate = ({ todo, handleUpdateTodo }) => {
 	const { updateDescription, onInputChange } = useForm({
 		updateDescription: todo.description,
@@ -36,7 +37,10 @@ export const TodoUpdate = ({ todo, handleUpdateTodo }) => {
 				placeholder='¿Qué hay que hacer?'
 				readOnly={disabled}
 				ref={focusInputRef}
+			
+				
 			/>
+
 
 			<button className='btn-edit' type='submit'>
 				<FaEdit />

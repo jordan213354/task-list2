@@ -1,20 +1,26 @@
 import React from 'react';
-import { useForm } from '../hooks/useForm';
 
+import {useForm} from '../hooks/useForm'
+import '../App.css';
 export const TodoAdd = ({ handleNewTodo }) => {
-	const { description, onInputChange, onResetForm } = useForm({
+	const {  description, onInputChange, onResetForm} = useForm({
 		description: '',
 	});
+
+
 
 	const onFormSubmit = e => {
 		e.preventDefault();
 
-		if (description.length <= 1) return;
+		if (description.length <= 3)
+		
+			return;
 
 		let newTodo = {
 			id: new Date().getTime(),
 			description: description,
 			done: false,
+			
 		};
 
 		handleNewTodo(newTodo);
@@ -30,8 +36,11 @@ export const TodoAdd = ({ handleNewTodo }) => {
 				value={description}
 				onChange={onInputChange}
 				placeholder='¿Qué hay que hacer?'
+				
+				
 			/>
-
+			
+			
 			<button className='btn-add' type='submit'>
 				Agregar
 			</button>
