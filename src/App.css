@@ -15,7 +15,7 @@
 
 body {
 	font-family: Poppins;
-	max-width: 1300px;
+
 	display: flex;
 	justify-content: center;
 
@@ -33,7 +33,7 @@ body {
 }
 
 .inicio-titulo h1 {
-	font-size: 60px;
+	font-size: 50px;
 }
 
 .inicio-titulo p {
@@ -69,6 +69,12 @@ body {
 
 .task-list {
 	width: 100%;
+}
+
+.task-list h1 {
+	font-size: 40px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 

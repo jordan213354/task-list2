@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Box} from "@chakra-ui/react"
 import { TodoAdd } from "../src/components/TodoAdd";
 import { TodoList } from "../src/components/TodoList"
 import { useTodo } from "../src/hooks/useTodo";
@@ -13,13 +13,14 @@ function Tareas() {
 		handleCompleteTodo,
 		handleUpdateTodo,
 	} = useTodo();
-    return (
+	return (
+		<Box w='100%' h='300px' p={40} bgGradient='linear(to-r, green.200, pink.500)'>
         <div className='task-list'>
       
             <div className="card-to-do">
-				<h1>Lista de tareas</h1>
+				<h1 >Lista de tareas</h1>
 				<div className="counter-todos">
-					<h3>
+					<h3 color='pink'>
 						N° Tareas: <span>{todosCount}</span>
 					</h3>
 					<h3>
@@ -38,8 +39,9 @@ function Tareas() {
 					handleDeleteTodo={handleDeleteTodo}
 					handleCompleteTodo={handleCompleteTodo}
 				/>
-			</div>
-        </div>
+				</div>
+			
+        </div></Box>
     )
 }
 
