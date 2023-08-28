@@ -3,14 +3,14 @@ import React from 'react'
 import { Grid, GridItem } from '@chakra-ui/react'
 function SobreNosotros() {
     return (
-        		<Box w='100%' h='450px' p={40} bgGradient='linear(to-r, green.200, pink.500)' borderRadius={10}>
+        		<Box w='100%' h='450px' p={40} bgGradient='linear(to-r, green.200, pink.500)' borderRadius={10} >
         <div className='inicio-titulo' >
 
 
   
           
-           <Container borderRadius={10} maxW='2x1' bg='blue.600' centerContent>
-                    <Box padding='6' bg='white' color='#618685' maxW='md'>
+           <Container borderRadius={10} maxW='2x1' bg='blue.600' centerContent >
+                    <Box padding='6' bg='white' color='#618685' maxW='md'  >
                   
 <h1>Lista de tareas</h1>
 <p>
@@ -18,6 +18,7 @@ function SobreNosotros() {
                             Tambien en la parte superior se encuentra dos indicadores en donde hace refencia de cuantas tareas tienes, y cuantas tareas tienes Pendientes.</p>
                      
   </Box>
+  
 </Container>
          
            

@@ -16,7 +16,7 @@
 body {
 	font-family: Poppins;
 
-	display: flex;
+
 	justify-content: center;
 
 
@@ -34,11 +34,12 @@ body {
 
 .inicio-titulo h1 {
 	font-size: 50px;
+
 }
 
 .inicio-titulo p {
 	margin-top: 20px;
-	color: #618685;
+	color: darkslategrey;
 
 }
 

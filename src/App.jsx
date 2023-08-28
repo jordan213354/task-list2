@@ -11,12 +11,14 @@ import Tareas from "../pages/Tareas"
 import NavBar from "./components/NavBar";
 
 
+
 function App()  {
 
 
 	return (
 		
 		<>
+
 			<NavBar />
 			
 				<Routes>
